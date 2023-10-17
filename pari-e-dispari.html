@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <title>Palindroma</title>
+    <title>Pari e Dispari</title>
 </head>
 <body>
 
@@ -26,9 +26,18 @@
     <main class="container pt-5">
       <div class="card m-auto text-center" style="width: 30rem;">
         <div class="card-body p-4">
-          <label for="word" class="form-label fs-4 mb-3">Inserire parola</label>
-          <input type="text" class="form-control mb-3" id="word">
-
+            <div class="btn-group" role="group" aria-label="radio toggle button group">
+                <input type="radio" class="btn-check" name="number_player" id="number1" value="1">
+                <label class="btn btn-outline-danger" for="number1">1</label>
+                <input type="radio" class="btn-check" name="number_player" id="number2" value="2">
+                <label class="btn btn-outline-danger" for="number2">2</label>
+                <input type="radio" class="btn-check" name="number_player" id="number3" value="3">
+                <label class="btn btn-outline-danger" for="number3">3</label>
+                <input type="radio" class="btn-check" name="number_player" id="number4" value="4">
+                <label class="btn btn-outline-danger" for="number4">4</label>
+                <input type="radio" class="btn-check" name="number_player" id="number5" value="5">
+                <label class="btn btn-outline-danger" for="number5">5</label>
+              </div>
           <div class="alert d-none mb-4">Studente non presente</div>
           <button type="button" class="btn btn-primary">Verifica</button>
         </div>
