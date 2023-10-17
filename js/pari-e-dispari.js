@@ -1,5 +1,6 @@
 
 let btn = document.querySelector('button')
+let alert = document.querySelector('.alert')
 
 btn.addEventListener('click',
 function()
@@ -15,7 +16,7 @@ function()
     console.log(`Computer ${numberComputer}`);
     console.log(parseInt(numberPlayer) + numberComputer);
 
-    let result = ((parseInt(numberPlayer) + numberComputer) % 2 === 0 && evenOddPlayer === 'even') ? 'Player win' : 'computer win';
+    let result = ((parseInt(numberPlayer) + numberComputer) % 2 === 0 && evenOddPlayer === 'even' || (parseInt(numberPlayer) + numberComputer) % 2 === 1 && evenOddPlayer === 'odd') ? 'Player win' : 'computer win';
     
     console.log(result);
 });
